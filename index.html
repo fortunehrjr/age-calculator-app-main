@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <form class="date-section">
+          <div class="divs">
+            Day
+            <input required class="day" placeholder="DD" />
+            <i class="error-msg"></i>
+          </div>
+          <div class="divs">
+            Month
+            <input required class="month" min="1" max="12" placeholder="MM" />
+            <i class="error-msg"></i>
+          </div>
+          <div class="divs">
+            Year
+            <input required class="year" min="1950" max="" placeholder="YYYY" />
+            <i class="error-msg"></i>
+          </div>
+
+          <button class="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="44"
+              viewBox="0 0 46 44"
+            >
+              <g fill="none" stroke="#FFF" stroke-width="2">
+                <path
+                  d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                />
+              </g>
+            </svg>
+          </button>
+        </form>
+
+        <div class="result-section">
+          <i>
+            <h2><span class="result-year color-result">--</span> Year</h2>
+            <h2><span class="result-month color-result">--</span> month</h2>
+            <h2><span class="result-day color-result">--</span> days</h2>
+          </i>
+        </div>
+      </div>
+
+      <!-- <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/fortunehrjr" target="_blank">Fortune</a>.
+      </div> -->
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

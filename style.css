@@ -1,0 +1,98 @@
+@import url(./assets/fonts/Poppins-Regular.ttf);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+}
+input {
+  width: 90%;
+  font-size: 28px;
+  border: none;
+  border: 1px solid hsl(0, 1%, 44%);
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+input:focus {
+  border: 1px solid hsl(259, 100%, 65%);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 86%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.container {
+  height: 60vh;
+  width: 40%;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 94%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 150px;
+  position: absolute;
+}
+.date-section {
+  display: flex;
+  width: 90%;
+  height: 120px;
+  /* background-color: aqua; */
+  /* padding-bottom: 5rem !important; */
+  border-bottom: 1px solid gray;
+  align-items: center;
+  font-size: 15px;
+  padding: 5rem 7rem 5rem 0rem;
+  letter-spacing: 1.5px;
+  color: hsl(0, 1%, 44%);
+  text-transform: capitalize;
+}
+.divs {
+  display: flex;
+  flex-direction: column;
+}
+.submit {
+  background-color: hsl(259, 100%, 65%);
+  padding: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 23%;
+  right: 6%;
+  border: none;
+  transition: all 200ms ease;
+}
+
+.submit:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+
+.result-section {
+  height: 100%;
+  width: 100%;
+  padding-left: 2rem;
+  font-size: 3rem;
+  font-family: Poppins;
+}
+.color-result {
+  color: hsl(259, 100%, 65%);
+}
+.error-msg {
+  padding-top: 7px;
+  color: red;
+  font-size: 0.7rem;
+  text-transform: lowercase;
+}
